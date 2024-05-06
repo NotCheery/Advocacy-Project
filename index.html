@@ -30,14 +30,15 @@
 
 
   <!--- About --->
-  <div id = "about">
+  <div id="about" class="revealable">
   <h2>Description</h2>
   
   <p> This topic is about <span class = 'highlight'>digital mindfulness</span>. Digital mindfulness is about being mindful about the way we use technology. Many people end up spending way too much time on their phones without event realizing it. This can be quite damaging to our mental health as we mindlessly consume content after content. </p>
 
   <p> There's a huge problem with people procrastinating using technology rather than using it as a tool. This website will include links to articles for information about our use of digital technology.
   It will also include some ideas on how you can spend your time in other things.</p>
-
+</div>
+  
   <!-- Part 1: Navbar Starter Code -->
 
   <div class="navbar">
@@ -46,25 +47,17 @@
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact Information</a></li>
       <li><a href="#resources">Resources</a></li>
-      
-      <!-- Stretch Challenge: Drop Down -->
     </ul>
   </div>
 
-  <!-- Part 2: Flexbox Layout Stater Code -->
-
-  <div class="container">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-  </div>
 
   <!--- Impact --->
-  <div id="impact">
+
+<div class="revealable" id="impact">
   <h2>Impact!</h2>
 
   <a>
-  <img src="img/Social-Media-Advertising.jpg.optimal.jpg" width="200" height="150" /> </a>
+  <img src="img/Scoail_media.jpg" width="200" height="150" /> </a>
   <h3>Where can this problem have lasting effects?</h3>
   <p>Social media is a tool which can at times be harmful to our mental health. Extensive use of social media can result in developing mental health problems and body image issues.
   </p>
@@ -79,9 +72,10 @@
   <h3>Where else else can this problem have lasting effects?</h3>
   <p>Why?
   </p>
-
+  </div>
+  
   <!--Contact Information -->
-  <div id="contact">
+  <div id="contact" class="revealable">
   <h2>Contact Information</h2>
     <p>
       Some information about me!
@@ -91,24 +85,59 @@
         <li>My GitHub account is NotCheery.</li>
       </ul>
     </p>
-
-
-  <!--Petition Form -->  
-    <div class="petition" id="petition">
+  </div>
+  
+  <div class="petition revealable" id="petition">
 
         <h2>Sign Our Petition 📢</h2>
         <div class="petition-container">
 
+          <div class="petition-para">
+            This is a petition to raise mental awareness. Every signature counts! <br>
+            <br>
+            Technology is a double-edged sword that can be used for good and bad. You can be part of the solution by taking the initiative to sign and help raise mental awareness. Every hour spent on social media can lead to mental health issues such as anxiety, depression, body image issues, and more. Spreading awareness and educating people about mental health can be a validation for those who struggle with it. 
+          </div>
+
+          <div class="signatures">
+            <p>🖊️ DJ from Brooklyn supports this.</p>
+            <p>🖊️ Amy from Queens supports this.</p>
+            <p>🖊️ Teresa from Harlem supports this.</p>
+          </div>
+
+         </div>
+
       <!--- Sign Petition Form --->
       <form id="sign-petition" title="sign-petition">
         <!-- inputs go here -->
-      </form>
+        <label>Name:</label>
+        <input type="text" id="name">
+        <label>Hometown:</label>
+        <input type="text" id="hometown">
+        <label>Email:</label>
+        <input type="text" id="email">
+        </form> 
 
-       <!--- Sign Now Button --->
-      <button id="sign-now-button">Sign Now</button>
+        <!--button-->
+        <button id="sign-now-button">Sign Now</button>
 
     </div>
-    
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+        <p id="thanks-modal-content">Thank you!</p>
+        <!-- button here (stretch feature) -->
+      </div>
+      <!-- image here-->
+      <img src="img/images.jpg"
+    </div>
+
+  </div>
+  
   <script src="index.js"></script>
 </body>
 
