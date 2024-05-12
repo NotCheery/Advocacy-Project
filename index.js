@@ -1,5 +1,3 @@
-//We are on step 4 in unit 5
-
 let themeButton = document.getElementById("theme-button");
 
 // TODO: Complete the toggleDarkMode function
@@ -111,7 +109,6 @@ const toggleModal = (person) => {
     modal.style.display = 'none';
   }, 4000);
 };
-
 
 
 function scaleImage() {
